@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +13,8 @@
       text-align: center;
       margin: 0;
       padding: 0;
-      height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
       color: #fff;
     }
@@ -67,6 +67,7 @@
       border-radius: 10px;
       margin: 0 10px 20px;
       background-color: rgba(255, 255, 255, 0.2);
+      max-width: 300px;
     }
 
     .sector h3 {
@@ -77,8 +78,32 @@
     .sector p {
       font-size: 1.2em;
     }
+
+    /* Responsive adjustments */
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .cta-button {
+        font-size: 1.2em;
+      }
+
+      .owner-name {
+        font-size: 1.5em;
+      }
+
+      .sector {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
+
 <body>
   <h2>Welcome to</h2>
   <h1>RoyTech</h1>
@@ -120,4 +145,5 @@
     </div>
   </div>
 </body>
+
 </html>
